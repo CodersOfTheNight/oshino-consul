@@ -72,6 +72,6 @@ class ConsulAgent(Agent):
                 ok = all([check["Status"] == "passing" for check in node["Checks"]])
                 logger.debug("Node is Ok? {0}".format(ok))
                 event_fn(metric_f=1.0,
-                         status="ok" if ok else "failure",
+                         state="ok" if ok else "failure",
                          service=self.prefix + service_name,
                          host=node["Node"]["Node"])
