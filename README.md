@@ -13,6 +13,11 @@ Add agent to configuration:
 module: oshino_consul.agent.ConsulAgent
 ```
 
+Config
+======
+`host` - Consul host (default: localhost)
+
+`port` - Consul port (default: 8500)
 Example config
 ==============
 ```yaml
