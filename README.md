@@ -13,11 +13,16 @@ Add agent to configuration:
 module: oshino_consul.agent.ConsulAgent
 ```
 
+Output Events
+==============
+- `<agent_name>.<service_name>` state `ok` if is alive, state `failure` if dead
+
 Config
 ======
 `host` - Consul host (default: localhost)
 
 `port` - Consul port (default: 8500)
+
 Example config
 ==============
 ```yaml
